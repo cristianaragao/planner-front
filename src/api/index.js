@@ -8,7 +8,7 @@ import {
 
 const client = new ApolloClient({
   ssrMode: typeof window === "undefined",
-  uri: process.env.BASE_API,
+  uri: process.env.NEXT_PUBLIC_BASE_API,
   cache: new InMemoryCache(),
 });
 
